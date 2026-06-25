@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jesús García — Desarrollador Fullstack</title>
+  <meta name="description" content="CV y portafolio de Jesús García, desarrollador Fullstack. React, Vue, Node.js, Django, Spring Boot." />
+  <meta name="author" content="Jesús García" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Jesús García — Desarrollador Fullstack" />
+  <meta property="og:description" content="CV y portafolio: React, Vue, Node.js, Django, Spring Boot." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' font-family='monospace'>%E2%8C%A8</text></svg>" />
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="nav" id="nav">
+    <a href="#hero" class="nav__brand">JG<span class="accent">.</span></a>
+    <nav class="nav__links" aria-label="Navegación principal">
+      <a href="#about">Perfil</a>
+      <a href="#skills">Habilidades</a>
+      <a href="#projects">Proyectos</a>
+      <a href="#contact">Contacto</a>
+    </nav>
+    <button class="nav__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="hero__inner">
+        <p class="hero__eyebrow"><span class="accent">&gt;</span> Desarrollador Fullstack</p>
+        <h1 class="hero__title">Jesús García</h1>
+        <p class="hero__lead">
+          Construyo aplicaciones web de extremo a extremo, del frontend al backend,
+          con las tecnologías más usadas del mercado.
+        </p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#projects">Ver proyectos</a>
+          <a class="btn btn--ghost" href="#contact">Contacto</a>
+        </div>
+        <ul class="hero__social">
+          <li><a href="https://github.com/JesusYG" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/jesús-garcía-a07729222" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://portafolio-react-93df.onrender.com" target="_blank" rel="noopener">Portafolio</a></li>
+        </ul>
+      </div>
+      <div class="hero__glow" aria-hidden="true"></div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="section__head reveal">
+        <span class="section__num">01</span>
+        <h2 class="section__title">Perfil</h2>
+      </div>
+      <div class="about reveal">
+        <p>
+          Soy un desarrollador apasionado por la programación y el desarrollo de software,
+          con ganas de aprender algo nuevo cada día. Me atrae el entorno tecnológico y me
+          considero una persona <strong>perseverante y creativa</strong>.
+        </p>
+        <p class="about__edu">
+          <span class="accent">&#9656;</span> Benemérita Universidad Autónoma de Puebla
+          &nbsp;·&nbsp; Inglés intermedio
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="skills">
+      <div class="section__head reveal">
+        <span class="section__num">02</span>
+        <h2 class="section__title">Habilidades técnicas</h2>
+      </div>
+      <div class="skills">
+        <article class="card reveal">
+          <h3 class="card__title"><span class="accent">{ }</span> Frontend</h3>
+          <ul class="tags">
+            <li>React</li><li>Vue.js</li><li>JavaScript</li>
+            <li>HTML5</li><li>CSS3</li>
+          </ul>
+        </article>
+        <article class="card reveal">
+          <h3 class="card__title"><span class="accent">&lt;/&gt;</span> Backend</h3>
+          <ul class="tags">
+            <li>Node.js</li><li>Django</li><li>Spring Boot</li>
+            <li>Python</li><li>Java</li><li>C#</li><li>C / C++</li>
+          </ul>
+        </article>
+        <article class="card reveal">
+          <h3 class="card__title"><span class="accent">#</span> Bases de datos</h3>
+          <ul class="tags">
+            <li>PostgreSQL</li><li>MySQL</li><li>SQL</li><li>SQLAlchemy</li>
+          </ul>
+        </article>
+        <article class="card reveal">
+          <h3 class="card__title"><span class="accent">&#9881;</span> Herramientas</h3>
+          <ul class="tags">
+            <li>Git</li><li>VSCode</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <div class="section__head reveal">
+        <span class="section__num">03</span>
+        <h2 class="section__title">Proyectos</h2>
+      </div>
+      <div class="projects">
+        <article class="project reveal">
+          <header class="project__top">
+            <h3 class="project__name">New Bloom</h3>
+            <span class="project__icon" aria-hidden="true">&#128197;</span>
+          </header>
+          <p class="project__desc">
+            Sistema de agenda de citas que conecta a clientes con profesionales
+            (dentistas, peluqueros, psicólogos y más). Integra el calendario de Google
+            y un panel web para visualizar pagos.
+          </p>
+          <ul class="tags tags--sm">
+            <li>React</li><li>Node.js</li><li>Google Calendar API</li>
+          </ul>
+        </article>
+
+        <article class="project reveal">
+          <header class="project__top">
+            <h3 class="project__name">Profesional Software</h3>
+            <span class="project__icon" aria-hidden="true">&#129658;</span>
+          </header>
+          <p class="project__desc">
+            Plataforma para profesionales de la salud: gestión de la base de datos de
+            pacientes, plantillas de recetas médicas y búsqueda de medicamentos.
+          </p>
+          <ul class="tags tags--sm">
+            <li>React</li><li>SQL</li>
+          </ul>
+        </article>
+
+        <article class="project reveal">
+          <header class="project__top">
+            <h3 class="project__name">Veterinaria Animal</h3>
+            <span class="project__icon" aria-hidden="true">&#128062;</span>
+          </header>
+          <p class="project__desc">
+            Sistema para que veterinarios den seguimiento a la salud de las mascotas:
+            vacunas, medicación y demás procedimientos médicos de cada cliente.
+          </p>
+          <ul class="tags tags--sm">
+            <li>React</li><li>SQL</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="projects__more reveal">
+        <a class="btn btn--ghost" href="https://github.com/JesusYG?tab=repositories" target="_blank" rel="noopener">
+          Ver más en GitHub →
+        </a>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section section--contact" id="contact">
+      <div class="reveal">
+        <span class="section__num">04</span>
+        <h2 class="section__title">¿Trabajamos juntos?</h2>
+        <p class="contact__lead">
+          Estoy abierto a nuevas oportunidades. Escríbeme y con gusto respondo.
+        </p>
+        <a class="btn btn--primary btn--lg" href="mailto:ukl117733@proton.me">ukl117733@proton.me</a>
+        <ul class="contact__list">
+          <li><a href="tel:+522462450216">+52 246 245 0216</a></li>
+          <li><a href="https://github.com/JesusYG" target="_blank" rel="noopener">github.com/JesusYG</a></li>
+          <li><a href="https://www.linkedin.com/in/jesús-garcía-a07729222" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Jesús García — Hecho con HTML, CSS y JavaScript.</p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

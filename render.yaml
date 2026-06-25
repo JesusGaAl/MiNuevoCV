@@ -1,0 +1,12 @@
+# Render Blueprint — sitio estático
+# https://render.com/docs/blueprint-spec
+services:
+  - type: web
+    name: cv-jesus-garcia
+    runtime: static
+    buildCommand: "echo 'Sitio estático, sin build'"
+    staticPublishPath: .
+    headers:
+      - path: /*
+        name: X-Content-Type-Options
+        value: nosniff
